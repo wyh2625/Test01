@@ -12,7 +12,7 @@ public class HeadSculpture : MonoBehaviour
     {
         playerName = GameObject.Find("Name").GetComponent<Text>(); // 获取Text组件
         playerName.horizontalOverflow = HorizontalWrapMode.Overflow; // 横向允许超出文本框
-        //playerName.text = Login.Instance.PlayerName.text; // 将登入界面的名字复制到游戏界面
+        playerName.text = Login.Instance.PlayerName.text; // 将登入界面的名字复制到游戏界面
 
         // 获取组件
         headSculpture = GameObject.Find("head_img").GetComponent<Image>();
